@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
+using System.Text;
 namespace Практична_робота_1_Двійкові
 {
     internal class Program
@@ -7,86 +7,33 @@ namespace Практична_робота_1_Двійкові
         static void Main(string[] args)
         {
             Console.Write("Введіть перше двійкове число: ");
-            string stra = Console.ReadLine();
+            string a = Console.ReadLine();
 
             Console.Write("Введіть друге двійкове число: ");
-            string strb = Console.ReadLine();
+            string b = Console.ReadLine();
             
             int n = 7;
-            if (stra.Length != n || strb.Length != n)
+            if (a.Length != n || b.Length != n)
             {
                 Console.WriteLine("Помилка: числа повинні мати 7 символів");
                 return;
             }
-            if (!IsBinary(stra) || !IsBinary(strb))
+            if (!IsBinary(a) || !IsBinary(b))
             {
                 Console.WriteLine("Помилка: введені числа повинні містити тільки 0 і 1");
                 return;
             }
-            
-            bool[] a = new bool[7];
-            bool[] b = new bool[7];
 
-            
-            string res = "";
-            for (int i = 0; i < stra.Length; i++)
-            {
-                if (stra[i] == '1')
-                    a[i] = true;
-                if (strb[i] == '1')
-                    b[i] = true;
-            }
-            bool beforoneone = false;
-            for (int i = 6; i >= 0; i--)
-            {
-                if (!beforoneone)
-                {
-                    if (!a[i] && !b[i])
-                        res += '0';
-                    else if (a[i] && !b[i] || b[i] && !a[i])
-                        res += "1";
-                    else //if (a[i] && b[i])
-                    {
-                        res += "0";
-                        beforoneone = true;
-                    }
-                }
-                else //beforeonene true
-                {
-
-                    beforoneone = false;
-                    if (a[i] && b[i] && i == 0)
-                        res += "11";
-                    else if (!a[i] && b[i] && i == 0 || a[i] && !b[i] && i == 0)
-                        res += "01";
-                    else if (!a[i] && !b[i])
-                        res += '1';
-                    else if (a[i] && !b[i] || b[i] && !a[i])
-                    {
-                        res += "0";
-                        beforoneone = true;
-                    }
-                    else
-                    {
-                        res += "1";
-                        beforoneone = true;
-                    }
-                }
+            string res = AddBinary(a,b);
 
 
+            byte inta = WriteNumDecim(a);
+            byte intb= WriteNumDecim(b);
 
-            }
-            //Console.WriteLine("Res before reverse:" + res);
+            Console.WriteLine($"\nДодаємо два числа у бінарному вигляді: \n {a}\n+{b}\n _______");
             if (res.Length==7)
-            res += " ";
-            string trueres = "";
-            for (int i = res.Length - 1; i >= 0; i--)
-            {
-                trueres += res[i];
-            }
-            byte intstra = WriteNumTenNonReverseTest(stra);
-            byte intstrb = WriteNumTenNonReverseTest(strb);
-            Console.WriteLine($"\nДодаємо два числа у бінарному вигляді: \n {stra}\n+{strb}\n _______\n{trueres}\nУ десятковому вигляді:\n {intstra}\n+{intstrb}\n____\n {WriteNumTenNonReverseTest(trueres)}");
+                Console.Write(" ");
+            Console.WriteLine($"{res}\nУ десятковому вигляді:\n {inta}\n+{intb}\n____\n {WriteNumDecim(res)}");
             
             
         }
@@ -98,7 +45,25 @@ namespace Практична_робота_1_Двійкові
                     return false;
             return true;
         }
-        static byte WriteNumTenNonReverseTest(string res)
+        static string AddBinary(string a, string b)
+        {
+            int beforeonon = 0;
+            StringBuilder result = new StringBuilder();
+
+            for (int i = a.Length - 1; i >= 0; i--)
+            {
+                int sum = (a[i] - '0') + (b[i] - '0') + beforeonon;
+
+                result.Insert (0,sum % 2);
+                beforeonon = sum / 2;
+            }
+
+            if (beforeonon > 0)
+                result.Insert(0, beforeonon);
+
+            return result.ToString();
+        }
+        static byte WriteNumDecim(string res)
         {
             byte intres = 0;
             for (int i = 0; i < res.Length; i++)
