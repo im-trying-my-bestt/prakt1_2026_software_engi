@@ -1,0 +1,14 @@
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\bin\Debug\net8.0\Практична робота 1_Двійкові.exe
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\bin\Debug\net8.0\Практична робота 1_Двійкові.deps.json
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\bin\Debug\net8.0\Практична робота 1_Двійкові.runtimeconfig.json
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\bin\Debug\net8.0\Практична робота 1_Двійкові.dll
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\bin\Debug\net8.0\Практична робота 1_Двійкові.pdb
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.AssemblyInfoInputs.cache
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.AssemblyInfo.cs
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.csproj.CoreCompileInputs.cache
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.dll
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\refint\Практична робота 1_Двійкові.dll
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.pdb
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\Практична робота 1_Двійкові.genruntimeconfig.cache
+C:\Users\bad\Desktop\uni-file\Вступ до спеціальності_1_курс_2_сем_2026\Практична робота 1_Двійкові\obj\Debug\net8.0\ref\Практична робота 1_Двійкові.dll
