@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Практична робота 1_Двійкові")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d850cf7af92cad91337a082ab1c6501453dffba7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96ca21ff62ab446a9cc75d288d4a25fc58a5d7b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Практична робота 1_Двійкові")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Практична робота 1_Двійкові")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

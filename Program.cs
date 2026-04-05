@@ -27,8 +27,7 @@ namespace Практична_робота_1_Двійкові
             bool[] a = new bool[7];
             bool[] b = new bool[7];
 
-            Console.WriteLine();
-            Console.WriteLine($"Додаємо два числа у бінарному вигляді: \n {stra}\n+{strb}\n _______");
+            
             string res = "";
             for (int i = 0; i < stra.Length; i++)
             {
@@ -84,12 +83,11 @@ namespace Практична_робота_1_Двійкові
             for (int i = res.Length - 1; i >= 0; i--)
             {
                 trueres += res[i];
-                Console.Write(res[i]);
             }
             byte intstra = WriteNumTenNonReverseTest(stra);
             byte intstrb = WriteNumTenNonReverseTest(strb);
+            Console.WriteLine($"\nДодаємо два числа у бінарному вигляді: \n {stra}\n+{strb}\n _______\n{trueres}\nУ десятковому вигляді:\n {intstra}\n+{intstrb}\n____\n {WriteNumTenNonReverseTest(trueres)}");
             
-            Console.WriteLine($"\nУ десятковому вигляді:\n {intstra}\n+{intstrb}\n____\n {WriteNumTenNonReverseTest(trueres)}");
             
         }
         // Перевірка двійкового числа
